@@ -2,3 +2,146 @@
 	display: block;
 	line-height: 29px;
 }
+.swatch{
+	width:200px;
+	height:240px;
+	float:left
+}
+
+.swatch h4{
+	text-align:center;
+	margin:0;
+	font-weight: normal;
+}
+
+.swatch span{
+	display:block;
+	text-align:center;
+	font-size:12px;
+	font-weight: 500;
+}
+
+.swatch>div{
+	height:120px;
+	width:120px;
+	margin:0 auto 10px;
+	border-radius:80px;
+	font-size:10px;
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+	transition:background-position 250ms
+}
+
+.swatch .swatch-wrapper{
+	width:120px;
+	height:300px;
+	background:#faf;
+	overflow:hidden;
+	position:relative;
+	transition:top 200ms;
+	top:0
+}
+
+.swatch .swatch-wrapper:hover{
+	transition:top 200ms;
+	top:-40px
+}
+
+.swatch .swatch-main{
+	width:120px;
+	height:120px
+}
+
+.swatch .swatch-active,.swatch .swatch-hover{
+	width:120px;
+	height:20px
+}
+
+.swatch:nth-child(1)>div{
+	border:1px solid #c1c1c1;
+	cursor:pointer
+}
+
+.swatch:nth-child(1)>div .swatch-main{
+	background-color:#fbfbfb
+}
+
+.swatch:nth-child(1)>div .swatch-hover{
+	background:#ebebeb
+}
+
+.swatch:nth-child(1)>div .swatch-active{
+	background:#dadada
+}
+
+.swatch:nth-child(2) div{
+	background-color:#F8F8F8;
+	border: 1px solid rgba(0,0,0,0.1)
+}
+
+.swatch:nth-child(3) div{
+	cursor:pointer
+}
+
+.swatch:nth-child(3) div .swatch-main{
+	background-color:#424f5a
+}
+
+.swatch:nth-child(3) div .swatch-hover{
+	background:#5e6972
+}
+
+.swatch:nth-child(3) div .swatch-active{
+	background:#343f48
+}
+
+.swatch:nth-child(4) div{
+	background-color:#c1c1c1
+}
+
+.swatch:nth-child(5) div{
+	background-color:#333
+}
+
+.swatch:nth-child(6)>div{
+	background-color:none;
+	cursor:pointer
+}
+
+.swatch:nth-child(6)>div .swatch-main{
+	background-color: #177EE5
+}
+
+.swatch:nth-child(6)>div .swatch-hover{
+	background: #1677D8
+}
+
+.swatch:nth-child(6)>div .swatch-active{
+	background: #1571CE
+}
+
+.swatch:nth-child(7)>div{
+	background-color:none;
+	cursor:pointer
+}
+
+.swatch:nth-child(7)>div .swatch-main{
+	background-color:#55D00D
+}
+
+.swatch:nth-child(7)>div .swatch-hover{
+	background:#50C40C
+}
+
+.swatch:nth-child(7)>div .swatch-active{
+	background:#4CBB0C
+}
+
+.swatch:nth-child(8) div{
+	background-color:#ff9500
+}
+
+.swatch:nth-child(9) div{
+	background-color:#d74345
+}
