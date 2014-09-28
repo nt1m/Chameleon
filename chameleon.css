@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5 {
 	overflow: hidden;
 	position: relative;
 	vertical-align: middle;
+	box-sizing: border-box;
 }
 .checkbox input + .glyph {
 	border-radius: 0.125em;
@@ -46,16 +47,16 @@ h1, h2, h3, h4, h5 {
 }
 .checkbox input + .glyph::before {
 	content: "";
-	height: 0.3em;
+	height: 0.25em;
 	left: 50%;
 	border-color: transparent;
 	border-style: solid;
 	border-width: 0px 0px 0.15em 0.15em;
-	margin-left: -0.42em;
-	margin-top: -0.3em;
+	margin-left: -0.37em;
+	margin-top: -0.27em;
 	position: absolute;
 	top: 50%;
-	width: 0.7em;
+	width: 0.6em;
 	transform: rotate(-50deg);
 	border-radius: 0.01em;
 }
