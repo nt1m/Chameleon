@@ -46,7 +46,7 @@ a:not(.button):hover {
 }
 .checkbox input + .glyph {
 	border-radius: 0.125em;
-	transition: background 0.3s;
+	transition: background 0.2s;
 }
 .checkbox input:checked + .glyph {
 	background-color: currentColor;
