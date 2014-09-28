@@ -2,6 +2,9 @@
 	display: block;
 	line-height: 29px;
 }
+.button-group {
+	margin: 10px 0;
+}
 .swatch{
 	width:200px;
 	height:240px;

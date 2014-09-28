@@ -32,6 +32,10 @@ a:not(.button):hover {
 	-moz-user-select: none;
 	user-select: none;
 }
+.checkbox input:disabled + .glyph,
+.radio input:disabled + .glyph {
+	opacity: 0.5;
+}
 .checkbox input + .glyph,
 .radio input + .glyph {
 	display: inline-block;
@@ -101,6 +105,9 @@ a:not(.button):hover {
 	transition: all 0.07s;
 	cursor: pointer;
 }
+.button:disabled {
+	opacity: 0.5;
+}
 .button:not(.borderless) {
 	background-color: #EDEDED;
 	border-color: #D1D1D1;
@@ -138,6 +145,7 @@ a:not(.button):hover {
 /* Button group */
 .button-group {
 	clear: both;
+	overflow: auto;
 }
 .button-group > * {
 	margin-left: -1px;
@@ -149,6 +157,7 @@ a:not(.button):hover {
 .button-group > :first-child {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	margin-left: 0;
 }
 .button-group > :last-child {
 	border-top-left-radius: 0;
