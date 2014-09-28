@@ -7,6 +7,13 @@ body {
 h1, h2, h3, h4, h5 {
 	font-weight: 300;
 }
+a {
+	color: #177EE5;
+	text-decoration: none;
+}
+a:not(.button):hover {
+	text-decoration: underline;
+}
 /* Theme variable here */
 .glyph {
 	font-size: 16px;
