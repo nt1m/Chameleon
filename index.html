@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
 	<link rel="stylesheet" href="demo.css">
 </head>
-<body>
+<body onload="document.getElementById('indeterminate').indeterminate = true">
 <h1>Checkbox</h1>
 	<label class="checkbox">
 		<input type="checkbox">
@@ -17,6 +17,11 @@
 		<input type="checkbox" checked>
 		<div class="glyph"></div>
 		<label>Checked checkbox</label>
+	</label>
+	<label class="checkbox">
+		<input type="checkbox" id="indeterminate">
+		<div class="glyph"></div>
+		<label>Indeterminate checkbox</label>
 	</label>
 <h1>Radio</h1>
 	<label class="radio">

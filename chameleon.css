@@ -48,11 +48,20 @@ a:not(.button):hover {
 	border-radius: 0.125em;
 	transition: background 0.2s;
 }
-.checkbox input:checked + .glyph {
+.checkbox input:checked + .glyph,
+.checkbox input:indeterminate + .glyph {
 	background-color: currentColor;
 	border-color: currentColor;
 }
-.checkbox input + .glyph::before {
+.checkbox input:indeterminate + .glyph::before {
+	content: "";
+	display: block;
+	margin: calc(50% - 0.05em) 10%;
+	height: 0.1em;
+	width: 80%;
+	background-color: white;
+}
+.checkbox input:not(:indeterminate) + .glyph::before {
 	content: "";
 	height: 0.25em;
 	left: 50%;
