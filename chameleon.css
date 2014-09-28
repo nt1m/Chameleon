@@ -1,0 +1,116 @@
+body {
+	background-color: #F8F8F8;
+	color: #333;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 14px;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 300;
+}
+/* Theme variable here */
+.glyph {
+	font-size: 16px;
+	color: #177EE5;
+}
+
+/* Checkbox and radio styles */
+.checkbox, .radio {
+	cursor: pointer;
+}
+.checkbox input, .radio input {
+	display: none;
+}
+.checkbox label, .radio label {
+	cursor: inherit;
+	-moz-user-select: none;
+	user-select: none;
+}
+.checkbox input + .glyph,
+.radio input + .glyph {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: 0.1em solid rgba(0,0,0,0.2);
+	background-color: #FFF;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+}
+.checkbox input + .glyph {
+	border-radius: 0.125em;
+	transition: background 0.3s;
+}
+.checkbox input:checked + .glyph {
+	background-color: currentColor;
+	border-color: currentColor;
+}
+.checkbox input + .glyph::before {
+	content: "";
+	height: 0.3em;
+	left: 50%;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 0px 0px 0.15em 0.15em;
+	margin-left: -0.42em;
+	margin-top: -0.3em;
+	position: absolute;
+	top: 50%;
+	width: 0.7em;
+	transform: rotate(-50deg);
+	border-radius: 0.01em;
+}
+.checkbox input:checked + .glyph::before {
+	border-color: white;
+}
+.radio input + .glyph {
+	border-radius:100%;
+	box-sizing: border-box;
+	transition: border-color 0.3s, border-width 0.07s;
+}
+.radio input:checked + .glyph {
+	border: 0.25em solid currentColor;
+}
+/* Buttons */
+.button {
+	background-color: #EDEDED;
+	border: 1px solid #D1D1D1;
+	padding: 4px 10px;
+	border-radius: 2px;
+	font-size: 14px;
+	font-family: "Fira Sans";
+	transition: all 0.07s;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #E3E3E3;
+}
+.button:active {
+	background-color: #DDDDDD;
+	box-shadow: 0px 1px 0px 0px rgba(24, 25, 26, 0.07) inset;
+}
+.button.primary {
+	background-color: #177EE5;
+	color: white;
+	border-color: transparent;
+}
+.button.primary:hover {
+	background-color: #4598EA;
+}
+.button.primary:active {
+	background-color: #1571CE;
+}
+/* Inputs */
+.input {
+	padding: 4px 10px;
+	font-size: 14px;
+	font-family: inherit;
+	border: 1px solid #D1D1D1;
+	border-radius: 2px;
+	color: #333;
+}
+.input:hover {
+	border-color: #BCBCBC;
+}
+.input:focus {
+	border-color: #177EE5;
+}
